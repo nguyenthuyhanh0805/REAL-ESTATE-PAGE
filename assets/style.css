@@ -109,3 +109,31 @@ body {
     margin: 30px 0px 50px 0px; }
   .home .body-page .subcribe img {
     margin: 20px 0px 0px 0px; }
+
+.home footer .nav-footer .navbar-box-footer {
+  margin: 20px 0px 20px 0px; }
+  .home footer .nav-footer .navbar-box-footer .nav-item-footer {
+    font-size: 12px;
+    font-weight: 600;
+    color: #686f75;
+    margin-right: 10px; }
+    .home footer .nav-footer .navbar-box-footer .nav-item-footer:hover {
+      color: #337ab7;
+      cursor: pointer;
+      text-decoration: none; }
+
+.home footer .nav-footer .info-contact {
+  font-size: 12px;
+  color: #686f75;
+  margin: 20px 0px 20px 0px; }
+  .home footer .nav-footer .info-contact span {
+    margin-right: 10px; }
+
+.home footer .copyright {
+  background-color: black; }
+  .home footer .copyright p {
+    font-size: 10px;
+    color: white;
+    margin: 30px 10px 30px 10px; }
+  .home footer .copyright .designer {
+    float: right; }

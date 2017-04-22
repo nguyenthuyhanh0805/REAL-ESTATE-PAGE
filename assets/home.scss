@@ -158,4 +158,42 @@ body{
                }
         }
     }
+    footer{
+        .nav-footer{
+            .navbar-box-footer{
+                margin: 20px 0px 20px 0px;
+                .nav-item-footer{
+                    font-size: 12px;
+                    font-weight: 600;
+                    color: #686f75;
+                    margin-right: 10px;
+                    &:hover{
+                        color:#337ab7;
+                        cursor:pointer;
+                        text-decoration: none
+
+                    }
+                }
+            }
+            .info-contact{
+                font-size: 12px;
+                color: #686f75;
+                margin: 20px 0px 20px 0px;
+               span{
+                   margin-right: 10px
+               }
+            }
+        }
+        .copyright{
+            background-color: black;
+            p{
+                font-size: 10px;
+                color: white;
+                margin: 30px 10px 30px 10px
+            }
+            .designer{
+                float:right
+            }
+        }
+    }
 }
