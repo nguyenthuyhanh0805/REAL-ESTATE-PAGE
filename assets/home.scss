@@ -1,0 +1,108 @@
+
+body{
+    margin: 20px 5px 20px 20px;
+    font-family: arial
+}
+.home{
+    .header-page{
+        .logo-box{
+            .title{
+                font-size: 24px;
+                font-weight: 600;
+                font-family: arial
+            }
+        
+        }
+        .navbar-box{
+            margin:5px 0px 2px 0px;
+            .nav-item{
+                font-size: 16px;
+                font-weight: 600;
+                color: black;
+                margin-right: 40px;
+                &:hover{
+                    color:#337ab7;
+                    cursor:pointer;
+                    text-decoration: none
+
+                }
+            }
+        }
+        
+    }
+    .body-page{
+        .main-content{
+            .item-carousel{
+                height: 500px;
+                img{
+                    height: 100%
+                }
+            }
+        }
+        .book-form{
+            background-color:#16487c;
+            button{
+                margin:20px 0px 20px 0px
+            }
+            select{
+                margin:20px 0px 20px 0px
+            }
+            .first-row {
+                .btn-for-sale{
+                    background-color: #0a1f35;
+                    color:white;
+                    border-radius: 5px;
+                    border:none;
+                    &:focus{
+                        background-color: #2867a8;
+                        color:#4d535a;
+                    }
+                }
+                .btn-for-rent{
+                    background-color: #0a1f35;
+                    color:white;
+                    border-radius: 3px;
+                    border:none;
+                    &:focus{
+                        background-color: #2867a8;
+                        color:#4d535a;
+                    }
+                }
+                .sl-location{
+                    border-radius: 3px;
+                    width: 100%
+                }
+                .sl-type{
+                    border-radius: 3px;
+                    width: 100%
+                }
+                .sl-special{
+                    border-radius: 3px;
+                    width: 100%
+                }
+            }
+            .second-row{
+                .sl-bed{
+                    border-radius: 3px;
+                    
+                }
+                .sl-bath{
+                    border-radius: 3px;
+                    
+                }
+                .sl-floor{
+                    border-radius: 3px;
+                    font-size:8px;
+                    height: 22px
+                }
+                .btn-search{
+                    background-color: #548cc5;
+                    border-radius: 3px;
+                    width:100%;
+                    border:none;
+                    color:white
+                }
+            }
+        }
+    }
+}

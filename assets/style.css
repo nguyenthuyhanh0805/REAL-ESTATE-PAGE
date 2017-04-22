@@ -1,0 +1,71 @@
+body {
+  margin: 20px 5px 20px 20px;
+  font-family: arial; }
+
+.home .header-page .logo-box .title {
+  font-size: 24px;
+  font-weight: 600;
+  font-family: arial; }
+
+.home .header-page .navbar-box {
+  margin: 5px 0px 2px 0px; }
+  .home .header-page .navbar-box .nav-item {
+    font-size: 16px;
+    font-weight: 600;
+    color: black;
+    margin-right: 40px; }
+    .home .header-page .navbar-box .nav-item:hover {
+      color: #337ab7;
+      cursor: pointer;
+      text-decoration: none; }
+
+.home .body-page .main-content .item-carousel {
+  height: 500px; }
+  .home .body-page .main-content .item-carousel img {
+    height: 100%; }
+
+.home .body-page .book-form {
+  background-color: #16487c; }
+  .home .body-page .book-form button {
+    margin: 20px 0px 20px 0px; }
+  .home .body-page .book-form select {
+    margin: 20px 0px 20px 0px; }
+  .home .body-page .book-form .first-row .btn-for-sale {
+    background-color: #0a1f35;
+    color: white;
+    border-radius: 5px;
+    border: none; }
+    .home .body-page .book-form .first-row .btn-for-sale:focus {
+      background-color: #2867a8;
+      color: #4d535a; }
+  .home .body-page .book-form .first-row .btn-for-rent {
+    background-color: #0a1f35;
+    color: white;
+    border-radius: 3px;
+    border: none; }
+    .home .body-page .book-form .first-row .btn-for-rent:focus {
+      background-color: #2867a8;
+      color: #4d535a; }
+  .home .body-page .book-form .first-row .sl-location {
+    border-radius: 3px;
+    width: 100%; }
+  .home .body-page .book-form .first-row .sl-type {
+    border-radius: 3px;
+    width: 100%; }
+  .home .body-page .book-form .first-row .sl-special {
+    border-radius: 3px;
+    width: 100%; }
+  .home .body-page .book-form .second-row .sl-bed {
+    border-radius: 3px; }
+  .home .body-page .book-form .second-row .sl-bath {
+    border-radius: 3px; }
+  .home .body-page .book-form .second-row .sl-floor {
+    border-radius: 3px;
+    font-size: 8px;
+    height: 22px; }
+  .home .body-page .book-form .second-row .btn-search {
+    background-color: #548cc5;
+    border-radius: 3px;
+    width: 100%;
+    border: none;
+    color: white; }
