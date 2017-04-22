@@ -113,7 +113,10 @@ body {
     background-position: center;
     background-size: cover; }
     .home .body-page .featured-property .featured-properties .detail-item-featured-property .info-detail-item-featured-property {
+      opacity: 0;
       padding: 10px 0px 5px 10px; }
+      .home .body-page .featured-property .featured-properties .detail-item-featured-property .info-detail-item-featured-property:hover {
+        cursor: pointer; }
       .home .body-page .featured-property .featured-properties .detail-item-featured-property .info-detail-item-featured-property p {
         font-size: 10px;
         color: white; }

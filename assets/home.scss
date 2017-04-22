@@ -159,7 +159,11 @@ body{
                     background-position: center;
                     background-size: cover;
                     .info-detail-item-featured-property{
+                        opacity: 0;
                         padding: 10px 0px 5px 10px;
+                        &:hover{
+                            cursor:pointer;
+                        }
                         p{
                             font-size: 10px;
                             color:white
