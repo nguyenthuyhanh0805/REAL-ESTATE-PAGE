@@ -91,9 +91,67 @@ body {
     color: white;
     border-radius: 3px;
     border: none;
-    background-color: #548cc5; }
+    background-color: #548cc5;
+    margin-bottom: 40px; }
   .home .body-page .news .show-property img {
     width: 100%; }
+
+.home .body-page .featured-property .title-featured-property {
+  font-weight: 600;
+  font-size: 24px;
+  padding: 40px 0px 20px 0px; }
+
+.home .body-page .featured-property .featured-properties {
+  margin-bottom: 20px; }
+  .home .body-page .featured-property .featured-properties .item-featured-property {
+    background-color: #dfe4e8; }
+    .home .body-page .featured-property .featured-properties .item-featured-property h2 {
+      font-size: 18px;
+      padding: 10px 0px 5px 10px; }
+  .home .body-page .featured-property .featured-properties .detail-item-featured-property {
+    background-image: url("./img/inside-house.jpg");
+    background-position: center;
+    background-size: cover; }
+    .home .body-page .featured-property .featured-properties .detail-item-featured-property .info-detail-item-featured-property {
+      padding: 10px 0px 5px 10px; }
+      .home .body-page .featured-property .featured-properties .detail-item-featured-property .info-detail-item-featured-property p {
+        font-size: 10px;
+        color: white; }
+      .home .body-page .featured-property .featured-properties .detail-item-featured-property .info-detail-item-featured-property button {
+        width: 50%;
+        color: white;
+        border-radius: 3px;
+        border: none;
+        background-color: #548cc5;
+        margin: 30px 0px 20px 0px; }
+    .home .body-page .featured-property .featured-properties .detail-item-featured-property .book-featured-property .type-property h3 {
+      color: white;
+      font-size: 12px;
+      padding: 10px 0px 5px 10px; }
+    .home .body-page .featured-property .featured-properties .detail-item-featured-property .book-featured-property button {
+      background-color: #b4a13a;
+      border-radius: 10px;
+      font-size: 12px;
+      margin-top: 20px;
+      border: none; }
+  .home .body-page .featured-property .featured-properties .info-item-featured-property {
+    margin-bottom: 20px;
+    padding-bottom: 10px; }
+    .home .body-page .featured-property .featured-properties .info-item-featured-property span {
+      padding-bottom: 10px;
+      color: #686f75;
+      margin-left: 10px; }
+    .home .body-page .featured-property .featured-properties .info-item-featured-property img {
+      width: 12px;
+      margin-right: 10px; }
+    .home .body-page .featured-property .featured-properties .info-item-featured-property .price {
+      color: blue;
+      font-weight: 600;
+      margin-left: 10px;
+      margin-top: 3px;
+      font-size: 16px; }
+      .home .body-page .featured-property .featured-properties .info-item-featured-property .price img {
+        width: 18px; }
 
 .home .body-page .subcribe {
   background-image: url("./img/background-subscribe.png");
