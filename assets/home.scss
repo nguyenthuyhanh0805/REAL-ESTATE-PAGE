@@ -30,7 +30,10 @@ body{
         }
         .login-box{
             margin:5px 0px 2px 0px;
-            font-size: 14px
+            font-size: 14px;
+            &:hover{
+                cursor:pointer;
+            }
         }
         
     }
@@ -129,6 +132,11 @@ body{
                    background-color: #548cc5;
                }
             }
+            .show-property{
+                img{
+                    width: 100%
+                }
+            }
         }
         .featured-property{
 
@@ -182,6 +190,24 @@ body{
                span{
                    margin-right: 10px
                }
+               
+            }
+            .media-contact{
+                margin:20px 0px 20px 0px;
+                a{
+                    &:hover{
+                        cursor:pointer;
+                    }
+                }
+                img{
+                    width: 12px
+                }
+                .twitter-contact{
+                    width:20px
+                }
+                .link-in-icon{
+                    width:20px
+                }
             }
         }
         .copyright{

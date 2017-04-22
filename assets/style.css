@@ -22,6 +22,8 @@ body {
 .home .header-page .login-box {
   margin: 5px 0px 2px 0px;
   font-size: 14px; }
+  .home .header-page .login-box:hover {
+    cursor: pointer; }
 
 .home .body-page .main-content .item-carousel {
   height: 500px; }
@@ -90,6 +92,8 @@ body {
     border-radius: 3px;
     border: none;
     background-color: #548cc5; }
+  .home .body-page .news .show-property img {
+    width: 100%; }
 
 .home .body-page .subcribe {
   background-image: url("./img/background-subscribe.png");
@@ -128,6 +132,17 @@ body {
   margin: 20px 0px 20px 0px; }
   .home footer .nav-footer .info-contact span {
     margin-right: 10px; }
+
+.home footer .nav-footer .media-contact {
+  margin: 20px 0px 20px 0px; }
+  .home footer .nav-footer .media-contact a:hover {
+    cursor: pointer; }
+  .home footer .nav-footer .media-contact img {
+    width: 12px; }
+  .home footer .nav-footer .media-contact .twitter-contact {
+    width: 20px; }
+  .home footer .nav-footer .media-contact .link-in-icon {
+    width: 20px; }
 
 .home footer .copyright {
   background-color: black; }
