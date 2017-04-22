@@ -90,3 +90,22 @@ body {
     border-radius: 3px;
     border: none;
     background-color: #548cc5; }
+
+.home .body-page .subcribe {
+  background-image: url("./img/background-subscribe.png");
+  color: white; }
+  .home .body-page .subcribe h1 {
+    font-weight: 600;
+    font-size: 24px;
+    padding: 40px 0px 20px 0px; }
+  .home .body-page .subcribe p {
+    font-size: 12px; }
+  .home .body-page .subcribe button {
+    width: 100%;
+    color: white;
+    border-radius: 3px;
+    border: none;
+    background-color: #548cc5;
+    margin: 30px 0px 50px 0px; }
+  .home .body-page .subcribe img {
+    margin: 20px 0px 0px 0px; }

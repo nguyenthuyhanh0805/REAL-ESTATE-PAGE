@@ -129,9 +129,33 @@ body{
                    background-color: #548cc5;
                }
             }
-            .show-property{
-                
-            }
+        }
+        .featured-property{
+
+        }
+        .subcribe{
+            background-image: url('./img/background-subscribe.png');
+            color:white;
+            h1{
+                font-weight: 600;
+                font-size: 24px;
+                padding: 40px 0px 20px 0px;
+               }
+            p{
+                   font-size: 12px
+               }
+            button{
+                   width:100%;
+                   color:white;
+                   border-radius: 3px;
+                   border:none;
+                   background-color: #548cc5;
+                   margin: 30px 0px 50px 0px
+
+               }
+               img{
+                   margin: 20px 0px 0px 0px
+               }
         }
     }
 }
