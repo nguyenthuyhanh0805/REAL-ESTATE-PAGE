@@ -10,14 +10,18 @@ body {
 .home .header-page .navbar-box {
   margin: 5px 0px 2px 0px; }
   .home .header-page .navbar-box .nav-item {
-    font-size: 16px;
+    font-size: 12px;
     font-weight: 600;
     color: black;
-    margin-right: 40px; }
+    margin-right: 20px; }
     .home .header-page .navbar-box .nav-item:hover {
       color: #337ab7;
       cursor: pointer;
       text-decoration: none; }
+
+.home .header-page .login-box {
+  margin: 5px 0px 2px 0px;
+  font-size: 14px; }
 
 .home .body-page .main-content .item-carousel {
   height: 500px; }
@@ -69,3 +73,20 @@ body {
     width: 100%;
     border: none;
     color: white; }
+
+.home .body-page .news {
+  background-image: url("./img/white-office.jpg");
+  background-position: center;
+  background-size: cover; }
+  .home .body-page .news .information-property h1 {
+    font-weight: 600;
+    font-size: 24px;
+    padding: 40px 0px 20px 0px; }
+  .home .body-page .news .information-property p {
+    font-size: 12px; }
+  .home .body-page .news .information-property button {
+    width: 100%;
+    color: white;
+    border-radius: 3px;
+    border: none;
+    background-color: #548cc5; }
