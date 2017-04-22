@@ -2,6 +2,24 @@ body {
   margin: 20px 5px 20px 20px;
   font-family: arial; }
 
+.home .header-page .short-contact {
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  background-color: #eeeeee; }
+  .home .header-page .short-contact span {
+    padding-bottom: 10px;
+    padding-top: 10px;
+    color: #686f75;
+    margin-left: 10px; }
+  .home .header-page .short-contact img {
+    width: 12px;
+    margin-right: 10px;
+    padding-top: 10px; }
+  .home .header-page .short-contact a:hover {
+    cursor: pointer; }
+  .home .header-page .short-contact .google-icon {
+    width: 20px; }
+
 .home .header-page .logo-box .title {
   font-size: 24px;
   font-weight: 600;

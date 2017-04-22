@@ -5,6 +5,32 @@ body{
 }
 .home{
     .header-page{
+        .short-contact{
+            margin-bottom: 20px;
+            padding-bottom:10px;
+            background-color:#eeeeee;
+            span{
+                padding-bottom: 10px;
+                padding-top:10px;
+                color:#686f75;
+                margin-left:10px;
+            }
+            img {
+                width: 12px;
+                margin-right:10px;
+                padding-top:10px;
+            }
+            a{
+                &:hover{
+                    cursor:pointer
+                }
+            }
+            .google-icon{
+                width:20px;
+            }
+            
+            
+        }
         .logo-box{
             .title{
                 font-size: 24px;
