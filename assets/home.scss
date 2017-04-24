@@ -1,19 +1,38 @@
+$font-text:    arial;
+
+//background-color: for paragraph
+$background-color1: #eeeeee; //for "short-contact" (on top page) && "featured-property" 
+$background-color2: #16487c; //for "book-form"
+$background-color3: black; // for "copyright"
+
+//background-color: for button
+$background-color4: #0a1f35; // button in "main-content" (for sale / for rent)
+$background-color5: #548cc5; // button in "main-content" (search); button in "news"; button in "featured-property" (view detail), in "subcribe"
+$background-color6: #b4a13a; // button in "featured-property" (for sale)
+
+//color: color for text
+$text-color1: #686f75; // text in "featured-property";
+$text-color2: white; // text inside the button
+$text-color3: white; // text in "featured-property", text in subcribe and "copyright"
+$text-color4: blue; // text of price in "featured-property"
+$text-color5: #337ab7; // hover text of navbar
 
 body{
     margin: 20px 5px 20px 20px;
-    font-family: arial
+    font-family: $font-text
 }
 .home{
     .header-page{
         .short-contact{
             margin-bottom: 20px;
             padding-bottom:10px;
-            background-color:#eeeeee;
+            background-color: $background-color1;
             span{
                 padding-bottom: 10px;
                 padding-top:10px;
-                color:#686f75;
+                color: $text-color1;
                 margin-left:10px;
+                font-size:12px
             }
             img {
                 width: 12px;
@@ -21,12 +40,13 @@ body{
                 padding-top:10px;
             }
             a{
+                font-size:12px;
                 &:hover{
                     cursor:pointer
                 }
             }
             .google-icon{
-                width:20px;
+                width:18px;
             }
             
             
@@ -35,23 +55,40 @@ body{
             .title{
                 font-size: 24px;
                 font-weight: 600;
-                font-family: arial
+                font-family: $font-text;
+                color: black;
             }
         
         }
         .navbar-box{
             margin:5px 0px 2px 0px;
+            display:block;
+            &.active{
+                display: none;
+            }
             .nav-item{
                 font-size: 12px;
                 font-weight: 600;
                 color: black;
                 margin-right: 20px;
                 &:hover{
-                    color:#337ab7;
+                    color: $text-color5;
                     cursor:pointer;
                     text-decoration: none
 
                 }
+            }
+        }
+        .icon-phone-hambuger{
+            display:none;
+            float:right;
+            a{
+                &:hover{
+                    cursor:pointer;
+                }
+            }
+            &.active{
+                display: block;
             }
         }
         .login-box{
@@ -73,7 +110,7 @@ body{
             }
         }
         .book-form{
-            background-color:#16487c;
+            background-color:$background-color2;
             button{
                 margin:20px 0px 20px 0px
             }
@@ -82,8 +119,8 @@ body{
             }
             .first-row {
                 .btn-for-sale{
-                    background-color: #0a1f35;
-                    color:white;
+                    background-color: $background-color4;
+                    color: $text-color2;
                     border-radius: 5px;
                     border:none;
                     &:focus{
@@ -92,8 +129,8 @@ body{
                     }
                 }
                 .btn-for-rent{
-                    background-color: #0a1f35;
-                    color:white;
+                    background-color: $background-color4;
+                    color: $text-color2;
                     border-radius: 3px;
                     border:none;
                     &:focus{
@@ -129,11 +166,11 @@ body{
                     height: 22px
                 }
                 .btn-search{
-                    background-color: #548cc5;
+                    background-color: $background-color5;
                     border-radius: 3px;
                     width:100%;
                     border:none;
-                    color:white
+                    color: $text-color2
                 }
             }
         }
@@ -152,10 +189,10 @@ body{
                }
                button{
                    width:100%;
-                   color:white;
+                   color: $text-color2;
                    border-radius: 3px;
                    border:none;
-                   background-color: #548cc5;
+                   background-color: $background-color5;
                    margin-bottom:40px
                }
             }
@@ -174,7 +211,7 @@ body{
             .featured-properties{
                 margin-bottom: 20px;
                 .item-featured-property{
-                    background-color: #dfe4e8;
+                    background-color: $background-color1;
                     h2{
                         font-size: 18px;
                         padding: 10px 0px 5px 10px
@@ -192,14 +229,14 @@ body{
                         }
                         p{
                             font-size: 10px;
-                            color:white
+                            color: $text-color3
                         }
                         button{
                             width:50%;
-                            color:white;
+                            color: $text-color2;
                             border-radius: 3px;
                             border:none;
-                            background-color: #548cc5;
+                            background-color: $background-color5;
                             margin: 30px 0px 20px 0px
 
                         }
@@ -207,13 +244,13 @@ body{
                     .book-featured-property{
                         .type-property{
                             h3{
-                                color:white;
+                                color: $text-color3;
                                 font-size:12px;
                                 padding: 10px 0px 5px 10px;
                             }
                         }
                         button{
-                            background-color: #b4a13a;
+                            background-color: $background-color6;
                             border-radius: 10px;
                             font-size:12px;
                             margin-top: 20px;
@@ -226,7 +263,7 @@ body{
                     padding-bottom:10px;
                     span{
                         padding-bottom: 10px;
-                        color:#686f75;
+                        color: $text-color1;
                         margin-left:10px;
                     }
                     img {
@@ -234,7 +271,7 @@ body{
                         margin-right:10px;
                     }
                     .price{
-                        color: blue;
+                        color: $text-color4;
                         font-weight: 600;
                         margin-left: 10px;
                         margin-top:3px;
@@ -248,7 +285,7 @@ body{
         }
         .subcribe{
             background-image: url('./img/background-subscribe.png');
-            color:white;
+            color: $text-color3;
             h1{
                 font-weight: 600;
                 font-size: 24px;
@@ -259,10 +296,10 @@ body{
                }
             button{
                    width:100%;
-                   color:white;
+                   color: $text-color2;
                    border-radius: 3px;
                    border:none;
-                   background-color: #548cc5;
+                   background-color: $background-color5;
                    margin: 30px 0px 50px 0px
 
                }
@@ -278,10 +315,10 @@ body{
                 .nav-item-footer{
                     font-size: 12px;
                     font-weight: 600;
-                    color: #686f75;
+                    color: $text-color1;
                     margin-right: 10px;
                     &:hover{
-                        color:#337ab7;
+                        color: $text-color5;
                         cursor:pointer;
                         text-decoration: none
 
@@ -290,7 +327,7 @@ body{
             }
             .info-contact{
                 font-size: 12px;
-                color: #686f75;
+                color: $text-color1;
                 margin: 20px 0px 20px 0px;
                span{
                    margin-right: 10px
@@ -313,13 +350,16 @@ body{
                 .link-in-icon{
                     width:20px
                 }
+                .google-icon{
+                    width:20px
+                }
             }
         }
         .copyright{
-            background-color: black;
+            background-color: $background-color3;
             p{
                 font-size: 10px;
-                color: white;
+                color: $text-color3;
                 margin: 30px 10px 30px 10px
             }
             .designer{

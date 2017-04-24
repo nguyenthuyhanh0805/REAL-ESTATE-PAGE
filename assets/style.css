@@ -10,23 +10,30 @@ body {
     padding-bottom: 10px;
     padding-top: 10px;
     color: #686f75;
-    margin-left: 10px; }
+    margin-left: 10px;
+    font-size: 12px; }
   .home .header-page .short-contact img {
     width: 12px;
     margin-right: 10px;
     padding-top: 10px; }
-  .home .header-page .short-contact a:hover {
-    cursor: pointer; }
+  .home .header-page .short-contact a {
+    font-size: 12px; }
+    .home .header-page .short-contact a:hover {
+      cursor: pointer; }
   .home .header-page .short-contact .google-icon {
-    width: 20px; }
+    width: 18px; }
 
 .home .header-page .logo-box .title {
   font-size: 24px;
   font-weight: 600;
-  font-family: arial; }
+  font-family: arial;
+  color: black; }
 
 .home .header-page .navbar-box {
-  margin: 5px 0px 2px 0px; }
+  margin: 5px 0px 2px 0px;
+  display: block; }
+  .home .header-page .navbar-box.active {
+    display: none; }
   .home .header-page .navbar-box .nav-item {
     font-size: 12px;
     font-weight: 600;
@@ -36,6 +43,14 @@ body {
       color: #337ab7;
       cursor: pointer;
       text-decoration: none; }
+
+.home .header-page .icon-phone-hambuger {
+  display: none;
+  float: right; }
+  .home .header-page .icon-phone-hambuger a:hover {
+    cursor: pointer; }
+  .home .header-page .icon-phone-hambuger.active {
+    display: block; }
 
 .home .header-page .login-box {
   margin: 5px 0px 2px 0px;
@@ -122,7 +137,7 @@ body {
 .home .body-page .featured-property .featured-properties {
   margin-bottom: 20px; }
   .home .body-page .featured-property .featured-properties .item-featured-property {
-    background-color: #dfe4e8; }
+    background-color: #eeeeee; }
     .home .body-page .featured-property .featured-properties .item-featured-property h2 {
       font-size: 18px;
       padding: 10px 0px 5px 10px; }
@@ -221,6 +236,8 @@ body {
   .home footer .nav-footer .media-contact .twitter-contact {
     width: 20px; }
   .home footer .nav-footer .media-contact .link-in-icon {
+    width: 20px; }
+  .home footer .nav-footer .media-contact .google-icon {
     width: 20px; }
 
 .home footer .copyright {
