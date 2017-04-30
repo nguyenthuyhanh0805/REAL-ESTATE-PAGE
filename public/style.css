@@ -77,6 +77,11 @@
 
 .body {
   font-family: arial, sans-serif; }
+  .body .web-sliders {
+    background-image: url("./img/background-slider.jpg");
+    width: 100%;
+    background-position: center;
+    background-size: cover; }
   .body .form-booking {
     background-color: #1655a2;
     margin: 20px 0px 0px 0px; }

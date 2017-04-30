@@ -141,8 +141,11 @@ $color-text-button01: black; //text in button  "btn-for-sale"
 
 .body{
     font-family: $font-stack01;
-    .web-silders{
-
+    .web-sliders{
+        background-image: url('./img/background-slider.jpg');
+        width: 100%;
+        background-position: center;
+        background-size: cover;
     }
     .form-booking{
         background-color: $background-color-section04;
