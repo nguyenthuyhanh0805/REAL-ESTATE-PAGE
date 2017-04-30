@@ -1,370 +1,361 @@
-$font-text:    arial;
+//Size Screen
+$break-small: 1100px;
+$break-large: 1320px;
 
-//background-color: for paragraph
-$background-color1: #eeeeee; //for "short-contact" (on top page) && "featured-property" 
-$background-color2: #16487c; //for "book-form"
-$background-color3: black; // for "copyright"
+// Fonts
+$font-stack01:    arial, sans-serif;
 
-//background-color: for button
-$background-color4: #0a1f35; // button in "main-content" (for sale / for rent)
-$background-color5: #548cc5; // button in "main-content" (search); button in "news"; button in "featured-property" (view detail), in "subcribe"
-$background-color6: #b4a13a; // button in "featured-property" (for sale)
+//background-color for section
+$background-color-section01: #dfe4e8; //background in  "shorted-contact", in "featured-property-box"
+$background-color-section02: white; //background in  "main-menu"
+$background-color-section03: black; //background in  "copyright"
 
-//color: color for text
-$text-color1: #686f75; // text in "featured-property";
-$text-color2: white; // text inside the button
-$text-color3: white; // text in "featured-property", text in subcribe and "copyright"
-$text-color4: blue; // text of price in "featured-property"
-$text-color5: #337ab7; // hover text of navbar
 
-body{
-    margin: 20px 5px 20px 20px;
-    font-family: $font-text
-}
-.home{
-    .header-page{
-        .short-contact{
-            margin-bottom: 20px;
-            padding-bottom:10px;
-            background-color: $background-color1;
+//background-color for button
+$background-color-button01: #5ea3da; //background of button in "property-content"
+$background-color-button02: #c29942; //background of button in "btn-for-sale"
+
+//background-color for item
+$background-color-item01: #772d42; // background in "hamburger-icon-line"
+
+// color for text
+$color-text01: #718a9e; //text in "shorted-contact"
+$color-text02: black; //text in "primary-nav" 
+$color-text03: white; //text in "featured-property-content"
+
+// color for text in button
+$color-text-button01: black; //text in button  "btn-for-sale"
+.head{
+    font-family: $font-stack01;
+    
+    .shorted-contact{
+        margin-top:5px;
+        color: $color-text01;
+        background-color: $background-color-section01;
+        div{
+            display: inline-block;
+        }
+        .company-contact{
             span{
-                padding-bottom: 10px;
-                padding-top:10px;
-                color: $text-color1;
-                margin-left:10px;
-                font-size:12px
+                margin: 0px 20px 0px 10px;
+                font-weight: 600;
+                img{
+                    height: 15px;
+                    width: 15px;
+                }
             }
-            img {
-                width: 12px;
-                margin-right:10px;
-                padding-top:10px;
+        }
+        
+        .media-contact{
+            float: right;
+            span{
+                margin: 0px 5px 0px 5px;
+                font-weight: 600;
+                img{
+                    height: 15px;
+                    width: 15px;
+                }
             }
+        }
+    }
+    .main-menu{
+        
+        width: 100%;
+        margin-top:50px;
+        
+        background-color: $background-color-section02;
+        div{
+            display: inline-block
+        }
+        .logo{
+            font-size: 24px;
+            font-weight: 600;
+        }
+        .menu-icon{
+            float:right;
+            display:none;
+            margin: 3px 20px 0px 0px;
+            button{
+                background-color:white;
+                border: none;
+                &:focus{
+                    outline:none
+                }
+            }
+            span{
+                display:block
+            }
+            .hamburger-icon-line{
+                height: 5px;
+                width: 30px;
+                background-color: $background-color-item01;
+                margin-bottom: 3px;
+                border-radius: 5px;
+            }
+            @media only screen and (max-width: $break-small) {
+                display:block;
+            }
+        }
+        .primary-nav{
+            div{
+                display: inline-block;
+            }
+            .nav-list{
+                 li{
+                    list-style-type: none;
+                    display: inline;
+                    a{
+                        color: $color-text02;
+                        font-weight: 600;
+                        margin:0px 20px 0px 10px;
+                        &:hover{
+                            cursor:pointer
+                        }
+                    }                   
+                }
+            }
+            .login-box{
+                float:right;
+                a{
+                    font-weight: 600;
+                }
+            }
+            &.show-menu{
+                display:block;
+                margin:0;
+                .nav-list{
+                    margin: 0px 10px 0px 5px;
+                }
+                .login-box{
+                    margin:0;
+                }
+                
+            }
+            @media only screen and (max-width: $break-small) {
+                display:none
+            }
+        }
+    }
+}
+
+.body{
+    font-family: $font-stack01;
+    .web-silders{
+
+    }
+    .property{
+        display: flex;
+        background-image: url('./img/white-office.jpg');
+        margin-top: 100px;
+        .property-content{
+            flex:1;
+            h1{
+                font-size: 24px;
+                font-weight: 600;
+                margin-top:50px;
+            }
+            p{
+                text-align: left;
+                margin-top:30px;
+            }
+            button{
+                width: 40%;
+                border-radius: 5px;
+                background-color: $background-color-button01;
+                color: white;
+                margin:20px 0px 10px 0px;
+            }
+            
+        }
+        .property-images{
+            flex:1;
+            @media only screen and (max-width: $break-large) {
+                display:none
+            }
+            
+        }
+
+    }
+
+    .featured{
+        .title{
+            h1{
+                font-size: 24px;
+                font-weight: 600;
+                margin: 50px 0px 30px 0px;
+                text-align: center;
+            }
+        }
+        .featured-properties{
+            display: flex;
+            div{
+                flex:1
+            }
+            .featured-property-box{
+                background-color: $background-color-section01;
+                margin-right: 20px;
+                h2{
+                    font-size: 16px;
+                    margin: 20px 5px 10px 20px;
+                    @media only screen and (max-width: $break-small) {
+                        margin: 30px 5px 10px 20px;
+                        padding-top: 20px;
+                    }
+                }
+                .featured-property-content-block{
+                    background-image: url('./img/inside-house.jpg');
+                    background-position: center;
+                    background-size: cover;
+                    color: $color-text03;
+                    .featured-property-content{
+                        opacity:0;
+                        display: block;
+                        p{
+                            padding: 20px 10px 20px 10px;
+                            font-size: 11px;
+                        }
+                        .btn-view-more{
+                            width: 60%;
+                            border-radius: 5px;
+                            background-color: $background-color-button01;
+                            color: white;
+                            margin: 5px 0px 10px 20px;
+                        }
+                        .featured-property-content-booking{
+                            display:flex;
+                            h3{
+                                font-size: 12px;
+                                margin-left: 20px;
+                                flex:1
+                            }
+                            .for-sale-box{
+                                float: right;
+                                margin: 10px 5px 0px 0px;
+                                flex:1;
+                                .btn-for-sale{
+                                    background-color: $background-color-button02;
+                                    color: $color-text-button01;
+                                    font-size:12px;
+                                    border-radius: 10px;
+                                }
+                            }
+                        }
+                        &:hover{
+                            cursor: pointer;
+                        }
+                        &.active{
+                            opacity:1
+                        }
+                    }
+                }
+                .featured-property-detail{
+                    margin: 10px 5px 5px 20px;
+                    span{
+                        display: block;
+                        img{
+                            height: 15px;
+                            width: 15px;
+                            margin-right: 5px;
+                        }
+                    }
+                    div{
+                        display: inline-block;
+                        margin: 10px 10px 5px 5px;
+                        img{
+                            height: 15px;
+                            width: 15px;
+                            margin-left:5px;
+                            margin-right: 5px;
+                        }
+                    }
+                }
+            }
+            @media only screen and (max-width: $break-small) {
+                display: block;
+                div{
+                    max-width: 800px;
+                }
+                .featured-property-box{
+                   margin-left:100px;
+                }
+            }
+        }
+    }
+    
+    .subscribe{
+        margin: 20px 0px 0px 0px;
+        display:flex;
+        background-image: url('./img/background-subscribe.png');
+        .subscribe-title{
+            width: 60%;
+            color: white;
+            flex:1;
+            h1{
+                font-size: 24px;
+                font-weight: 600;
+                margin-top:50px;
+                margin-bottom: 20px;
+            }
+            
+            button{
+                border-radius: 5px;
+                background-color: $background-color-button01;
+                color: white;
+                margin:20px 0px 30px 0px;
+               
+            }
+        }
+        .icon-subcribe{
+            flex:1;
+            @media only screen and (max-width: $break-small) {
+                display:none
+            }
+        }
+    }
+}
+
+.footer{
+    .sub-menu{
+        background-color:$background-color-section01;
+        padding: 10px 0px 10px 0px;
+        div{
+            display: inline-block;
+        }
+        .menu{
             a{
-                font-size:12px;
+                color: $color-text01;
+                font-weight: 600;
+                margin:0px 20px 0px 10px;
                 &:hover{
                     cursor:pointer
                 }
             }
-            .google-icon{
-                width:18px;
-            }
-            
-            
         }
-        .logo-box{
-            .title{
-                font-size: 24px;
+        .contact{
+            span{
+                color: $color-text01;
                 font-weight: 600;
-                font-family: $font-text;
-                color: black;
-            }
-        
-        }
-        .navbar-box{
-            margin:5px 0px 2px 0px;
-            display:block;
-            &.active{
-                display: none;
-            }
-            .nav-item{
-                font-size: 12px;
-                font-weight: 600;
-                color: black;
-                margin-right: 20px;
                 &:hover{
-                    color: $text-color5;
-                    cursor:pointer;
-                    text-decoration: none
-
+                    cursor:pointer
                 }
             }
-        }
-        .icon-phone-hambuger{
-            display:none;
-            float:right;
-            a{
-                &:hover{
-                    cursor:pointer;
-                }
+            img{
+                height: 15px;
+                width: 15px;
             }
-            &.active{
-                display: block;
-            }
-        }
-        .login-box{
-            margin:5px 0px 2px 0px;
-            font-size: 14px;
-            &:hover{
-                cursor:pointer;
-            }
-        }
-        
-    }
-    .body-page{
-        .main-content{
-            .item-carousel{
-                height: 500px;
-                img{
-                    height: 100%
-                }
-            }
-        }
-        .book-form{
-            background-color:$background-color2;
-            button{
-                margin:20px 0px 20px 0px
-            }
-            select{
-                margin:20px 0px 20px 0px
-            }
-            .first-row {
-                .btn-for-sale{
-                    background-color: $background-color4;
-                    color: $text-color2;
-                    border-radius: 5px;
-                    border:none;
-                    &:focus{
-                        background-color: #2867a8;
-                        color:#4d535a;
-                    }
-                }
-                .btn-for-rent{
-                    background-color: $background-color4;
-                    color: $text-color2;
-                    border-radius: 3px;
-                    border:none;
-                    &:focus{
-                        background-color: #2867a8;
-                        color:#4d535a;
-                    }
-                }
-                .sl-location{
-                    border-radius: 3px;
-                    width: 100%
-                }
-                .sl-type{
-                    border-radius: 3px;
-                    width: 100%
-                }
-                .sl-special{
-                    border-radius: 3px;
-                    width: 100%
-                }
-            }
-            .second-row{
-                .sl-bed{
-                    border-radius: 3px;
-                    
-                }
-                .sl-bath{
-                    border-radius: 3px;
-                    
-                }
-                .sl-floor{
-                    border-radius: 3px;
-                    font-size:8px;
-                    height: 22px
-                }
-                .btn-search{
-                    background-color: $background-color5;
-                    border-radius: 3px;
-                    width:100%;
-                    border:none;
-                    color: $text-color2
-                }
-            }
-        }
-        .news{
-            background-image: url('./img/white-office.jpg');
-            background-position: center;
-            background-size: cover;
-            .information-property{
-               h1{
-                   font-weight: 600;
-                    font-size: 24px;
-                    padding: 40px 0px 20px 0px;
-               }
-               p{
-                   font-size: 12px
-               }
-               button{
-                   width:100%;
-                   color: $text-color2;
-                   border-radius: 3px;
-                   border:none;
-                   background-color: $background-color5;
-                   margin-bottom:40px
-               }
-            }
-            .show-property{
-                img{
-                    width: 100%
-                }
-            }
-        }
-        .featured-property{
-            .title-featured-property{
-                font-weight: 600;
-                font-size: 24px;
-                padding: 40px 0px 20px 0px;
-            }
-            .featured-properties{
-                margin-bottom: 20px;
-                .item-featured-property{
-                    background-color: $background-color1;
-                    h2{
-                        font-size: 18px;
-                        padding: 10px 0px 5px 10px
-                    }
-                }
-                .detail-item-featured-property{
-                    background-image: url('./img/inside-house.jpg');
-                    background-position: center;
-                    background-size: cover;
-                    .info-detail-item-featured-property{
-                        opacity: 0;
-                        padding: 10px 0px 5px 10px;
-                        &:hover{
-                            cursor:pointer;
-                        }
-                        p{
-                            font-size: 10px;
-                            color: $text-color3
-                        }
-                        button{
-                            width:50%;
-                            color: $text-color2;
-                            border-radius: 3px;
-                            border:none;
-                            background-color: $background-color5;
-                            margin: 30px 0px 20px 0px
-
-                        }
-                    }
-                    .book-featured-property{
-                        .type-property{
-                            h3{
-                                color: $text-color3;
-                                font-size:12px;
-                                padding: 10px 0px 5px 10px;
-                            }
-                        }
-                        button{
-                            background-color: $background-color6;
-                            border-radius: 10px;
-                            font-size:12px;
-                            margin-top: 20px;
-                            border:none
-                        }
-                    }
-                }
-                .info-item-featured-property{
-                    margin-bottom: 20px;
-                    padding-bottom:10px;
-                    span{
-                        padding-bottom: 10px;
-                        color: $text-color1;
-                        margin-left:10px;
-                    }
-                    img {
-                        width: 12px;
-                        margin-right:10px;
-                    }
-                    .price{
-                        color: $text-color4;
-                        font-weight: 600;
-                        margin-left: 10px;
-                        margin-top:3px;
-                        font-size:16px;
-                        img{
-                            width:18px
-                        }
-                    }
-                }
-            }
-        }
-        .subcribe{
-            background-image: url('./img/background-subscribe.png');
-            color: $text-color3;
-            h1{
-                font-weight: 600;
-                font-size: 24px;
-                padding: 40px 0px 20px 0px;
-               }
-            p{
-                   font-size: 12px
-               }
-            button{
-                   width:100%;
-                   color: $text-color2;
-                   border-radius: 3px;
-                   border:none;
-                   background-color: $background-color5;
-                   margin: 30px 0px 50px 0px
-
-               }
-               img{
-                   margin: 20px 0px 0px 0px
-               }
         }
     }
-    footer{
-        .nav-footer{
-            .navbar-box-footer{
-                margin: 20px 0px 20px 0px;
-                .nav-item-footer{
-                    font-size: 12px;
-                    font-weight: 600;
-                    color: $text-color1;
-                    margin-right: 10px;
-                    &:hover{
-                        color: $text-color5;
-                        cursor:pointer;
-                        text-decoration: none
-
-                    }
-                }
-            }
-            .info-contact{
-                font-size: 12px;
-                color: $text-color1;
-                margin: 20px 0px 20px 0px;
-               span{
-                   margin-right: 10px
-               }
-               
-            }
-            .media-contact{
-                margin:20px 0px 20px 0px;
-                a{
-                    &:hover{
-                        cursor:pointer;
-                    }
-                }
-                img{
-                    width: 12px
-                }
-                .twitter-contact{
-                    width:20px
-                }
-                .link-in-icon{
-                    width:20px
-                }
-                .google-icon{
-                    width:20px
-                }
+     .copyright{
+        background-color: $background-color-section03;
+        div{
+            display: inline-block;
+            padding:30px 0px 10px 0px;
+            p{
+                color: white
             }
         }
-        .copyright{
-            background-color: $background-color3;
-            p{
-                font-size: 10px;
-                color: $text-color3;
-                margin: 30px 10px 30px 10px
-            }
-            .designer{
-                float:right
-            }
+        .designer{
+            float: right
         }
     }
 }
