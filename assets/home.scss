@@ -9,12 +9,13 @@ $font-stack01:    arial, sans-serif;
 $background-color-section01: #dfe4e8; //background in  "shorted-contact", in "featured-property-box"
 $background-color-section02: white; //background in  "main-menu"
 $background-color-section03: black; //background in  "copyright"
+$background-color-section04: #1655a2; //background in  "form-booking"
 
 
 //background-color for button
 $background-color-button01: #5ea3da; //background of button in "property-content"
 $background-color-button02: #c29942; //background of button in "btn-for-sale"
-
+$background-color-button03: #134179; // background of button in "first-row" in "form-booking"
 //background-color for item
 $background-color-item01: #772d42; // background in "hamburger-icon-line"
 
@@ -143,10 +144,75 @@ $color-text-button01: black; //text in button  "btn-for-sale"
     .web-silders{
 
     }
+    .form-booking{
+        background-color: $background-color-section04;
+        margin: 20px 0px 0px 0px;
+        .first-row{
+            display: flex;
+            padding: 30px 0px 20px 0px;
+            div{
+                flex:1;
+            }
+            select{
+                width: 90%;
+                border-radius:3px;
+            }
+            button{
+                border-radius: 5px;
+                background-color: $background-color-button03;
+                color: white;
+                border: none;
+            }
+             @media only screen and (max-width: $break-small) {
+                display: block;
+                padding-left: 30px
+            }
+            .sale-rent{
+                button{
+                    width: 45%;
+                }
+            }
+        }
+        .second-row{
+            display: flex;
+            margin: 5px 0px 0px 0px;
+            padding: 5px 0px 30px 0px;
+             @media only screen and (max-width: $break-small) {
+                display: block;
+                padding-left: 30px
+            }
+            div{
+                flex:1
+            }
+            button{
+                width: 91%;
+                border-radius: 5px;
+                background-color: $background-color-button01;
+                color: white;
+            }
+            select{
+                border-radius:3px;
+            }
+            .bed{
+                select{
+                    width: 45%;
+                }
+            }
+            .bath{
+                select{
+                    width: 45%;
+                }
+            }
+            .floor-area{
+                select{
+                    width: 45%;
+                }
+            }
+        }
+    }
     .property{
         display: flex;
         background-image: url('./img/white-office.jpg');
-        margin-top: 100px;
         .property-content{
             flex:1;
             h1{
