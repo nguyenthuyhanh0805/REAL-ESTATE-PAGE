@@ -1,4 +1,5 @@
 //Size Screen
+$break-verySmall: 763px;
 $break-small: 1100px;
 $break-large: 1320px;
 
@@ -38,11 +39,17 @@ $color-text-button01: black; //text in button  "btn-for-sale"
         }
         .company-contact{
             span{
-                margin: 0px 20px 0px 10px;
+                margin: 5px 20px 0px 10px;
                 font-weight: 600;
                 img{
                     height: 15px;
                     width: 15px;
+                }
+            }
+            br{
+                display:none;
+                @media only screen and (max-width: $break-verySmall) {
+                    display:block
                 }
             }
         }
@@ -113,6 +120,12 @@ $color-text-button01: black; //text in button  "btn-for-sale"
                             cursor:pointer
                         }
                     }                   
+                }
+                br{
+                    display:none;
+                    @media only screen and (max-width: $break-verySmall) {
+                        display: block
+                    }
                 }
             }
             .login-box{
@@ -406,6 +419,12 @@ $color-text-button01: black; //text in button  "btn-for-sale"
                 margin:0px 20px 0px 10px;
                 &:hover{
                     cursor:pointer
+                }
+            }
+            br{
+                display:none;
+                @media only screen and (max-width: $break-verySmall) {
+                    display:block
                 }
             }
         }

@@ -7,11 +7,16 @@
     .head .shorted-contact div {
       display: inline-block; }
     .head .shorted-contact .company-contact span {
-      margin: 0px 20px 0px 10px;
+      margin: 5px 20px 0px 10px;
       font-weight: 600; }
       .head .shorted-contact .company-contact span img {
         height: 15px;
         width: 15px; }
+    .head .shorted-contact .company-contact br {
+      display: none; }
+      @media only screen and (max-width: 763px) {
+        .head .shorted-contact .company-contact br {
+          display: block; } }
     .head .shorted-contact .media-contact {
       float: right; }
       .head .shorted-contact .media-contact span {
@@ -60,6 +65,11 @@
         margin: 0px 20px 0px 10px; }
         .head .main-menu .primary-nav .nav-list li a:hover {
           cursor: pointer; }
+    .head .main-menu .primary-nav .nav-list br {
+      display: none; }
+      @media only screen and (max-width: 763px) {
+        .head .main-menu .primary-nav .nav-list br {
+          display: block; } }
     .head .main-menu .primary-nav .login-box {
       float: right; }
       .head .main-menu .primary-nav .login-box a {
@@ -273,6 +283,11 @@
     margin: 0px 20px 0px 10px; }
     .footer .sub-menu .menu a:hover {
       cursor: pointer; }
+  .footer .sub-menu .menu br {
+    display: none; }
+    @media only screen and (max-width: 763px) {
+      .footer .sub-menu .menu br {
+        display: block; } }
   .footer .sub-menu .contact span {
     color: #718a9e;
     font-weight: 600; }
