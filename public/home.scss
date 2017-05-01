@@ -119,6 +119,9 @@ $color-text-button01: black; //text in button  "btn-for-sale"
                         &:hover{
                             cursor:pointer
                         }
+                        @media only screen and (max-width: $break-verySmall) {
+                           margin:0px 10px 0px 10px;
+                        }
                     }                   
                 }
                 br{

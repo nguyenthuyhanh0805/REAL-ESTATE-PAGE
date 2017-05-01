@@ -65,6 +65,9 @@
         margin: 0px 20px 0px 10px; }
         .head .main-menu .primary-nav .nav-list li a:hover {
           cursor: pointer; }
+        @media only screen and (max-width: 763px) {
+          .head .main-menu .primary-nav .nav-list li a {
+            margin: 0px 10px 0px 10px; } }
     .head .main-menu .primary-nav .nav-list br {
       display: none; }
       @media only screen and (max-width: 763px) {
