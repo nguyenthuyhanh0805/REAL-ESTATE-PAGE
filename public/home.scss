@@ -216,8 +216,15 @@ $color-text-button01: black; //text in button  "btn-for-sale"
     .property{
         display: flex;
         background-image: url('./img/white-office.jpg');
+         @media only screen and (max-width: $break-large) {
+            display:block;
+            align-items: center;
+        }
         .property-content{
             flex:1;
+            @media only screen and (max-width: $break-large) {
+                padding: 10px 10px 10px 20px;
+            }
             h1{
                 font-size: 24px;
                 font-weight: 600;
@@ -260,9 +267,14 @@ $color-text-button01: black; //text in button  "btn-for-sale"
             div{
                 flex:1
             }
+            @media only screen and (max-width: $break-small) {
+                display: block;
+            }
             .featured-property-box{
                 background-color: $background-color-section01;
                 margin-right: 20px;
+                width:100%;
+                
                 h2{
                     font-size: 16px;
                     margin: 20px 5px 10px 20px;
@@ -339,15 +351,6 @@ $color-text-button01: black; //text in button  "btn-for-sale"
                     }
                 }
             }
-            @media only screen and (max-width: $break-small) {
-                display: block;
-                div{
-                    max-width: 800px;
-                }
-                .featured-property-box{
-                   margin-left:100px;
-                }
-            }
         }
     }
     
@@ -355,10 +358,16 @@ $color-text-button01: black; //text in button  "btn-for-sale"
         margin: 20px 0px 0px 0px;
         display:flex;
         background-image: url('./img/background-subscribe.png');
+        @media only screen and (max-width: $break-small) {
+            display:block
+        }
         .subscribe-title{
-            width: 60%;
+            width: 100%;
             color: white;
             flex:1;
+            @media only screen and (max-width: $break-large) {
+                padding: 10px 10px 10px 20px;
+            }
             h1{
                 font-size: 24px;
                 font-weight: 600;

@@ -130,8 +130,15 @@
   .body .property {
     display: flex;
     background-image: url("./img/white-office.jpg"); }
+    @media only screen and (max-width: 1320px) {
+      .body .property {
+        display: block;
+        align-items: center; } }
     .body .property .property-content {
       flex: 1; }
+      @media only screen and (max-width: 1320px) {
+        .body .property .property-content {
+          padding: 10px 10px 10px 20px; } }
       .body .property .property-content h1 {
         font-size: 24px;
         font-weight: 600;
@@ -159,9 +166,13 @@
     display: flex; }
     .body .featured .featured-properties div {
       flex: 1; }
+    @media only screen and (max-width: 1100px) {
+      .body .featured .featured-properties {
+        display: block; } }
     .body .featured .featured-properties .featured-property-box {
       background-color: #dfe4e8;
-      margin-right: 20px; }
+      margin-right: 20px;
+      width: 100%; }
       .body .featured .featured-properties .featured-property-box h2 {
         font-size: 16px;
         margin: 20px 5px 10px 20px; }
@@ -221,21 +232,20 @@
             width: 15px;
             margin-left: 5px;
             margin-right: 5px; }
-    @media only screen and (max-width: 1100px) {
-      .body .featured .featured-properties {
-        display: block; }
-        .body .featured .featured-properties div {
-          max-width: 800px; }
-        .body .featured .featured-properties .featured-property-box {
-          margin-left: 100px; } }
   .body .subscribe {
     margin: 20px 0px 0px 0px;
     display: flex;
     background-image: url("./img/background-subscribe.png"); }
+    @media only screen and (max-width: 1100px) {
+      .body .subscribe {
+        display: block; } }
     .body .subscribe .subscribe-title {
-      width: 60%;
+      width: 100%;
       color: white;
       flex: 1; }
+      @media only screen and (max-width: 1320px) {
+        .body .subscribe .subscribe-title {
+          padding: 10px 10px 10px 20px; } }
       .body .subscribe .subscribe-title h1 {
         font-size: 24px;
         font-weight: 600;
